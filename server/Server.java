@@ -20,7 +20,7 @@ public class Server{
 			Product stub3 = (Product) UnicastRemoteObject.exportObject(p3, 0);
 			Product stub4 = (Product) UnicastRemoteObject.exportObject(p4, 0);
 
-			Registry registry = LocateRegistry.getRegistry("127.0.0.1", 9100);
+			Registry registry = LocateRegistry.getRegistry("127.0.0.1",9100);
 
 			registry.rebind("l", stub1);
 			registry.rebind("m", stub2);

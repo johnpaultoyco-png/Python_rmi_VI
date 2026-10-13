@@ -15,7 +15,10 @@ public class Client{
 			Product p3 = (Product) registry.lookup("c");
 			Product p4 = (Product) registry.lookup("b");
 
+			System.out.println( "The product name is: " + p1.getName() + ",  The price is: " + p1.getPrice());
 			System.out.println( "The product name is: " + p2.getName() + ",  The price is: " + p2.getPrice());
+			System.out.println( "The product name is: " + p3.getName() + ",  The price is: " + p3.getPrice());
+			System.out.println( "The product name is: " + p4.getName() + ",  The price is: " + p4.getPrice());
 
 		}catch(Exception e){
 			System.out.println("Client side error..." + e);
